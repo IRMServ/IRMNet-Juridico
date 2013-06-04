@@ -1,5 +1,5 @@
 <?php
-
+namespace Juridico;
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -8,6 +8,16 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 return array(
+      'acl' => array(
+        'Juridico' => array(
+            'JURIDICO' => array(
+                'Juridico\Controller\Index:index',              
+            ),
+            'TI' => array(
+                'Juridico\Controller\Index:index',              
+            ),
+        )
+    ),
     'router' => array(
         'routes' => array(
             // This defines the hostname route which forms the base
